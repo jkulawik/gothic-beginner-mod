@@ -1,7 +1,9 @@
 *.*
+_work/tools/help/classes
+wine_prefix
+
 !.gitignore
 !readme.md
-
 
 !system/aTestMod.ini
 !system/picardia2.ico
