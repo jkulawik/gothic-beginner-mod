@@ -11,7 +11,7 @@ wine_prefix
 !_work/Data/Worlds/MYMOD/*.ZEN
 
 !_work/Data/Scripts/Content/Gothic.src
-!_work/Data/Scripts/Content/MyMod/*
+!_work/Data/Scripts/Content/MyMod/**
 
 !_work/Data/Scripts/System/Menu.src
-!_work/Data/Scripts/System/MyMod/*
+!_work/Data/Scripts/System/MyMod/**
