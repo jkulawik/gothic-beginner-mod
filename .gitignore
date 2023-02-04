@@ -9,6 +9,7 @@ wine_prefix
 !system/picardia2.ico
 
 !_work/Data/Worlds/MYMOD/*.ZEN
+!_work/Data/Meshes/MyMod/**
 
 !_work/Data/Scripts/Content/Gothic.src
 !_work/Data/Scripts/Content/MyMod/**
