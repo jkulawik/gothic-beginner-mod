@@ -1,0 +1,100 @@
+ZenGin Archive
+ver 1
+zCArchiverGeneric
+ASCII
+saveGame 0
+date 4.2.2023 21:10:21
+user jacob
+END
+objects 8        
+END
+
+[% oCWorld:zCWorld 36865 0]
+	[VobTree % 0 0]
+		childs0=int:2
+		[% zCVobLevelCompo:zCVob 52224 1]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:-2908.55957 -1307.16382 -1505.16479 2821.61328 1282.59595 3006.21851 
+			trafoOSToWSRot=raw:0000803f0000000000000000000000000000803f0000000000000000000000000000803f
+			trafoOSToWSPos=vec3:0 0 0
+			vobName=string:LEVEL-VOB
+			visual=string:GUMEN_MAP.3DS
+			showVisual=bool:0
+			visualCamAlign=enum:0
+			visualAniMode=enum:0
+			visualAniModeStrength=float:0
+			vobFarClipZScale=float:1
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			zbias=int:0
+			isAmbient=bool:0
+			[visual zCMesh 53505 2]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs1=int:1
+		[% zCVob 52224 3]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:-45.3247528 83.4583588 465.602966 35.8943024 238.310043 544.982971 
+			trafoOSToWSRot=raw:0000803f0000008000000000000000000000803f0000000000000080000000800000803f
+			trafoOSToWSPos=vec3:-4.71522379 83.4583588 503.00296
+			vobName=string:
+			visual=string:PC_LOB_SLEEPER3.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			visualAniMode=enum:0
+			visualAniModeStrength=float:0
+			vobFarClipZScale=float:1
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			zbias=int:0
+			isAmbient=bool:0
+			[visual zCProgMeshProto 53505 4]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs2=int:0
+		[% zCVobLevelCompo:zCVob 52224 5]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:-2908.55957 -1307.16382 -1505.16479 2821.61328 1282.59595 3006.21851 
+			trafoOSToWSRot=raw:0000803f0000000000000000000000000000803f0000000000000000000000000000803f
+			trafoOSToWSPos=vec3:0 0 0
+			vobName=string:LEVEL-VOB
+			visual=string:GUMEN_MAP2.3DS
+			showVisual=bool:0
+			visualCamAlign=enum:0
+			visualAniMode=enum:0
+			visualAniModeStrength=float:0
+			vobFarClipZScale=float:1
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			zbias=int:0
+			isAmbient=bool:0
+			[visual zCMesh 53505 6]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs3=int:0
+	[]
+	[WayNet % 0 0]
+		[% zCWayNet 0 7]
+			waynetVersion=int:1
+			numWaypoints=int:0
+			numWays=int:0
+		[]
+	[]
+	[EndMarker % 0 0]
+	[]
+[]
