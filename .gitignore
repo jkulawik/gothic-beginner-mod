@@ -8,7 +8,7 @@ wine_prefix
 !system/aTestMod.ini
 !system/picardia2.ico
 
-!_work/Data/Worlds/MYMOD/*.ZEN
+!_work/Data/Worlds/MYMOD/**
 !_work/Data/Meshes/MyMod/**
 !_work/Data/Textures/MyMod/**
 
