@@ -331,4 +331,6 @@ MyMod\Story\Startup.d
 MyMod\Story\NPC\*.d
 MyMod\Story\Dialoge\*.d
 
+MyMod\Items\*.d
+
 
