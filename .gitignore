@@ -7,6 +7,7 @@ wine_prefix
 
 !system/aTestMod.ini
 !system/picardia2.ico
+!system/aa_reparse.sh
 
 !_work/Data/Worlds/MYMOD/**
 !_work/Data/Meshes/MyMod/**
