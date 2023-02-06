@@ -1,6 +1,6 @@
 INSTANCE ITAR_Mod_FakeRaven (C_Item)
 {
-	name 					=	"Ozdobna z≈Çota zbroja";
+	name 					=	"Ozdobna z≥ota zbroja";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -17,7 +17,7 @@ INSTANCE ITAR_Mod_FakeRaven (C_Item)
 
 	visual 					=	"ItAr_Raven_ADDON.3ds";
 	visual_change 				=	"Armor_Raven_ADDON.asc";
-	visual_skin 				=	0;
+	visual_skin 				=	1;
 	material 				=	MAT_METAL;
 
 	description				=	name;

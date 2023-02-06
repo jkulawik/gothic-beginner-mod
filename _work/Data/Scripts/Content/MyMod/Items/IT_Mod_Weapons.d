@@ -17,7 +17,7 @@ INSTANCE ItMw_Mod_2H_FakeSword (C_Item)
 	visual 				=	"golden_uriziel.3DS";
 
 	wear				=	WEAR_EFFECT;
-	effect				=	"spellFX_crossbow";
+	effect				=	"SPELLFX_ITEMGLIMMER"; //SPELLFX_ITEMGLIMMER, SPELLFX_WEAKGLIMMER_YELLOW
 
 	description			= name;
 	TEXT[0]				= "Wyglπda groünie, ale nie jest najlepszej jakoúci.";
