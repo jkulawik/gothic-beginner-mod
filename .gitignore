@@ -12,6 +12,7 @@ wine_prefix
 !_work/Data/Worlds/MYMOD/**
 !_work/Data/Meshes/MyMod/**
 !_work/Data/Textures/MyMod/**
+!_work/Data/Anims/MyMod/**
 
 !_work/Data/Scripts/Content/Gothic.src
 !_work/Data/Scripts/Content/MyMod/**
