@@ -15,7 +15,6 @@ func string concat4(var string s1, var string s2, var string s3, var string s4) 
 };
 
 
-
 // ------- Print queue ------- //
 
 const int Q_startY = 70;
@@ -28,9 +27,7 @@ var int Q_slotCount;  // init at 1
 // Shorthand for printscreen func so that AI_PrintScreen and PrintScreen can be easily swapped
 func void ps(var string text, var int pos_x, var int pos_y, var int duration)
 {
-	var string concat;
-	concat = concat3(text, ",    slot: ", IntToString(Q_slotCount));
-	AI_PrintScreen(concat, pos_x, pos_y, FONT_ScreenSmall, duration+5);
+	AI_PrintScreen(text, pos_x, pos_y, FONT_ScreenSmall, duration);
 };
 
 

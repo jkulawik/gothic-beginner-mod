@@ -99,7 +99,7 @@ AI\HUMAN\C_Human\C_NpcIsDown.d
 AI\HUMAN\C_Human\C_NpcIsToughGuy.d
 AI\HUMAN\C_Human\C_PlayerIsFakeBandit.d
 AI\HUMAN\C_Human\C_PlayerIsFakePirate.d
-AI\HUMAN\C_Human\C_PlayerHasFakeGuild.d
+MyMod\Overwrites\C_PlayerHasFakeGuild.d
 AI\HUMAN\C_Human\C_BanditHelpsStoryBandit.d
 AI\HUMAN\C_Human\C_BanditAttackBandit.d
 
@@ -327,10 +327,10 @@ AI\Test_Skripts\*.d
 STORY\B_Story\B_ENTER_DRAGONISLAND.d
 
 MyMod\*.d
-MyMod\Story\Startup.d
+MyMod\Story\*.d
+
 MyMod\Story\NPC\*.d
 MyMod\Story\Dialoge\*.d
-MyMod\Story\Replacements\*.d
 
 MyMod\Items\*.d
 

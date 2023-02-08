@@ -38,7 +38,7 @@ instance DIA_Szmyk_Hello (C_INFO)
 
 func int DIA_Szmyk_Hello_Condition()
 {
-	return true;
+	return false;
 };
 
 func void DIA_Szmyk_Hello_Info()
@@ -89,7 +89,7 @@ instance DIA_Szmyk_PrintTest (C_INFO)
 	npc			= DEV_2130_Szmyk;
 	nr			= 3;
 	condition	= DIA_Szmyk_EXIT_Condition;
-	information	= DIA_Szmyk_PrintTest_Info;
+	information	= DIA_Szmyk_PrintTest_Info_WithLog;
 	permanent	= true;
 	important 	= false;
 	description = "Wydrukuj mi coœ.";
@@ -103,6 +103,16 @@ func void DIA_Szmyk_PrintTest_Info()
 	Q_PrintScreen("testC", 4);
 	Q_PrintScreen("testD", 5);
 //	Q_PrintScreen("testE", 4);
+//	Q_PrintScreen("testF", 3);
+};
+
+
+func void DIA_Szmyk_PrintTest_Info_WithLog()
+{
+	Log_CreateTopic(TOPIC_MOD_TEST, LOG_NOTE);
+	M_LogEntry(TOPIC_MOD_TEST, "Niebo jest niebieskie.");
+	M_LogEntry(TOPIC_MOD_TEST, "S³oñce jest ¿ó³te.");
+	Q_PrintScreen("I like trains", 4);
 //	Q_PrintScreen("testF", 3);
 };
 
