@@ -4,7 +4,8 @@
 
 const int Q_startY = 70;
 const int Q_spaceY = 2;
-const int Q_startX = 4;
+const int Q_startX = 2;
+const int Q_coolOff = 8000; //miliseconds
 
 var int Q_slotCount;  // init at 1
 
@@ -38,17 +39,20 @@ func void Q_PrintScreen(var string text, var int duration)
 	
 	interval = Wld_CalcIntervalMinutes(Q_lastUsageHour, Q_lastUsageMinute, Wld_GetTimeHour(), Wld_GetTimeMin());
 
-	ValuePrintLog("interval", interval);
+//	ValuePrintLog("interval", interval);
 	
-	if (interval*GAME_MINUTE_TO_REAL_MILISECONDS > Q_lastUsageDuration*1000)
+	if (interval*GAME_MINUTE_TO_REAL_MILISECONDS > (Q_lastUsageDuration*1000 + Q_coolOff)	||	Q_slotCount == 13) // num of slots + 1
 	{
 		Q_slotCount = 1;
-		PrintLog("Resetting slots");
+//		PrintLog("Resetting slots");
 	};
 
 	// Print in each slot consecutively
 	if(Q_slotCount == 1){
 		ps(text, Q_startX, Q_startY-1*Q_spaceY, duration);
+		Q_lastUsageHour = Wld_GetTimeHour();
+		Q_lastUsageMinute = Wld_GetTimeMin();
+		Q_lastUsageDuration = duration; // we only care about when the first slot was last used; if it's empty, we can restart the queue
 	}
 	else if(Q_slotCount == 2){
 		ps(text, Q_startX, Q_startY-2*Q_spaceY, duration);
@@ -75,26 +79,17 @@ func void Q_PrintScreen(var string text, var int duration)
 		ps(text, Q_startX, Q_startY-9*Q_spaceY, duration);
 	}
 	else if(Q_slotCount == 10){
-		ps(text, Q_startX, Q_startY-9*Q_spaceY, duration);
+		ps(text, Q_startX, Q_startY-10*Q_spaceY, duration);
 	}
 	else if(Q_slotCount == 11){
-		ps(text, Q_startX, Q_startY-9*Q_spaceY, duration);
+		ps(text, Q_startX, Q_startY-11*Q_spaceY, duration);
 	}
 	else if(Q_slotCount == 12){
-		ps(text, Q_startX, Q_startY-9*Q_spaceY, duration);
-	};	
+		ps(text, Q_startX, Q_startY-12*Q_spaceY, duration);
+	};
 	
 	// Update counter
-	if(Q_slotCount == 12){
-		Q_slotCount = 1;
-	}
-	else{
-		Q_slotCount += 1;
-	};
-
-	Q_lastUsageHour = Wld_GetTimeHour();
-	Q_lastUsageMinute = Wld_GetTimeMin();
-	Q_lastUsageDuration = duration;
+	Q_slotCount += 1;	
 };
 
 

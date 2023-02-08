@@ -56,7 +56,7 @@ func void DIA_Szmyk_Hello_Info()
 instance DIA_Szmyk_Test (C_INFO)
 {
 	npc			= DEV_2130_Szmyk;
-	nr			= 2;
+	nr			= 3;
 	condition	= DIA_Szmyk_EXIT_Condition;
 	information	= DIA_Szmyk_Test_Info;
 	permanent	= true;
@@ -75,7 +75,7 @@ func void DIA_Szmyk_Test_Info()
 	Q_PrintScreen("testD", 5);
 	Q_PrintScreen("testE", 4);
 	Q_PrintScreen("testF", 3);
-	AI_StopProcessInfos(self);
+//	AI_StopProcessInfos(self);
 };
 
 
@@ -87,7 +87,7 @@ func void DIA_Szmyk_Test_Info()
 instance DIA_Szmyk_PrintTest (C_INFO)
 {
 	npc			= DEV_2130_Szmyk;
-	nr			= 3;
+	nr			= 2;
 	condition	= DIA_Szmyk_EXIT_Condition;
 	information	= DIA_Szmyk_PrintTest_Info_WithLog;
 	permanent	= true;
@@ -111,13 +111,9 @@ func void DIA_Szmyk_PrintTest_Info_WithLog()
 {
 	Log_CreateTopic(TOPIC_MOD_TEST, LOG_NOTE);
 	M_LogEntry(TOPIC_MOD_TEST, "Niebo jest niebieskie.");
-	M_LogEntry(TOPIC_MOD_TEST, "S這鎍e jest 鄴速e.");
-	var string tmp;
-	var string tmp2;
-	tmp = IntToString(Wld_GetTimeMin());
-	tmp2 = IntToString(Wld_GetTimeHour());
-	Q_PrintScreen(tmp, 4);
-	Q_PrintScreen(tmp2, 4);
+//	M_LogEntry(TOPIC_MOD_TEST, "S這鎍e jest 鄴速e.");
+//	Q_PrintScreen(tmp, 4);
+//	Q_PrintScreen(tmp2, 4);
 //	Q_PrintScreen("testF", 3);
 };
 
