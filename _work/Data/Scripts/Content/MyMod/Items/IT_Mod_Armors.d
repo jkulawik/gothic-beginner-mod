@@ -11,7 +11,7 @@ INSTANCE ITAR_Mod_FakeRaven (C_Item)
 	protection [PROT_FIRE] 	= 	0;
 	protection [PROT_MAGIC] = 	0;
 
-	value 					=	VALUE_ITAR_Raven_Addon;
+	value 					=	1000;
 
 	wear 					=	WEAR_TORSO;
 
