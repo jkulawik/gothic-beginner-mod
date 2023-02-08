@@ -112,7 +112,12 @@ func void DIA_Szmyk_PrintTest_Info_WithLog()
 	Log_CreateTopic(TOPIC_MOD_TEST, LOG_NOTE);
 	M_LogEntry(TOPIC_MOD_TEST, "Niebo jest niebieskie.");
 	M_LogEntry(TOPIC_MOD_TEST, "S³oñce jest ¿ó³te.");
-	Q_PrintScreen("I like trains", 4);
+	var string tmp;
+	var string tmp2;
+	tmp = IntToString(Wld_GetTimeMin());
+	tmp2 = IntToString(Wld_GetTimeHour());
+	Q_PrintScreen(tmp, 4);
+	Q_PrintScreen(tmp2, 4);
 //	Q_PrintScreen("testF", 3);
 };
 
