@@ -43,8 +43,7 @@ func int DIA_Szmyk_Hello_Condition()
 
 func void DIA_Szmyk_Hello_Info()
 {
-	AI_Output (self, other,"DIA_Szmyk_Hello_01_00"); //Welcome to Gothic Mod Build Tool example mod!
-
+	AI_Output (self, other,"DIA_Szmyk_Hello_01_00"); //Welcome to baby's first Gothic 2 mod!
 	AI_StopProcessInfos	(self);
 };
 
@@ -103,8 +102,8 @@ func void DIA_Szmyk_PrintTest_Info()
 	Q_PrintScreen("testB", 5);
 	Q_PrintScreen("testC", 4);
 	Q_PrintScreen("testD", 5);
-	Q_PrintScreen("testE", 4);
-	Q_PrintScreen("testF", 3);
+//	Q_PrintScreen("testE", 4);
+//	Q_PrintScreen("testF", 3);
 };
 
 

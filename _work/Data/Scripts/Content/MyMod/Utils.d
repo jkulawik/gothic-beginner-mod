@@ -18,13 +18,9 @@ func string concat4(var string s1, var string s2, var string s3, var string s4) 
 
 // ------- Print queue ------- //
 
-//const int Q_startY = 70;
+const int Q_startY = 70;
 const int Q_spaceY = 2;
-//const int Q_startX = 10;
-
-var int Q_startY;
-//var int Q_spaceY;
-var int Q_startX;
+const int Q_startX = 6;
 
 var int Q_slotCount;  // init at 1
 
@@ -65,7 +61,6 @@ func void Q_PrintScreen(var string text, var int duration)
 	}
 	else{
 		Q_slotCount += 1;
-//		Print("incrementing");
 	};
 };
 
