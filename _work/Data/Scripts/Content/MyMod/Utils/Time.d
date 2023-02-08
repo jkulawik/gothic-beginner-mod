@@ -1,6 +1,6 @@
 // Wld_GetTimeMin and Wld_GetTimeHour originally by orcwarrior
 
-const float GAME_MINUTE_TO_REAL_SECONDS = 4.5;
+const int GAME_MINUTE_TO_REAL_MILISECONDS = 4000;
 
 func int Wld_CheckMinutes(var int a, var int B, var int mm)  //0=false, 1=true
 {

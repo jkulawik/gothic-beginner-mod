@@ -326,11 +326,12 @@ AI\Test_Skripts\*.d
 
 STORY\B_Story\B_ENTER_DRAGONISLAND.d
 
-
-MyMod\Math.d
-MyMod\Time.d
+MyMod\Utils\StringUtils.d
+MyMod\Utils\Math.d
+MyMod\Utils\Time.d
 MyMod\*.d
 
+MyMod\Story\QuestLogTexts.d
 MyMod\Story\*.d
 MyMod\Story\NPC\*.d
 MyMod\Story\Dialoge\*.d

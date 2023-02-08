@@ -1,30 +1,13 @@
 
 
-// ------- String concat ------- //
-
-
-func string concat2(var string s1, var string s2){
-    return ConcatStrings(s1, s2);
-};
-
-func string concat3(var string s1, var string s2, var string s3) {
-    return concat2(concat2(s1, s2), s3);
-};
-
-func string concat4(var string s1, var string s2, var string s3, var string s4) {
-    return concat2(concat3(s1, s2, s3), s4);
-};
-
-
 // ------- Print queue ------- //
 
 const int Q_startY = 70;
 const int Q_spaceY = 2;
-const int Q_startX = 5;
+const int Q_startX = 4;
 
 var int Q_slotCount;  // init at 1
 
-var int Q_lastUsageDay;
 var int Q_lastUsageMinute;
 var int Q_lastUsageHour;
 var int Q_lastUsageDuration;
@@ -32,21 +15,36 @@ var int Q_lastUsageDuration;
 func void Q_initPrintQueue()
 {
 	Q_slotCount = 1;
-	Q_lastUsageDay = Wld_GetDay();
+	Q_lastUsageHour = 0;
+	Q_lastUsageMinute = 0;
+	Q_lastUsageDuration = 0;
 };
 
 // Shorthand for printscreen func so that AI_PrintScreen and PrintScreen can be easily swapped
 func void ps(var string text, var int pos_x, var int pos_y, var int duration)
 {
-	AI_PrintScreen(text, pos_x, pos_y, FONT_ScreenSmall, duration);
+	var string concat;
+	concat = concat3(text, "    slot: ", IntToString(Q_slotCount) );
+	AI_PrintScreen(concat, pos_x, pos_y, FONT_ScreenSmall, duration);
 };
 
 
 func void Q_PrintScreen(var string text, var int duration)
 {
 	// If it has been long since the last usage, reset slots
-//	var int currentDay = Wld_GetDay();
-//	if(currentDay != Wld_GetDay()	&&	)
+	var int interval;
+	var int time_h;
+	var int time_m;
+	
+	interval = Wld_CalcIntervalMinutes(Q_lastUsageHour, Q_lastUsageMinute, Wld_GetTimeHour(), Wld_GetTimeMin());
+
+	ValuePrintLog("interval", interval);
+	
+	if (interval*GAME_MINUTE_TO_REAL_MILISECONDS > Q_lastUsageDuration*1000)
+	{
+		Q_slotCount = 1;
+		PrintLog("Resetting slots");
+	};
 
 	// Print in each slot consecutively
 	if(Q_slotCount == 1){
@@ -76,7 +74,6 @@ func void Q_PrintScreen(var string text, var int duration)
 		Q_slotCount += 1;
 	};
 
-	Q_lastUsageDay = Wld_GetDay();
 	Q_lastUsageHour = Wld_GetTimeHour();
 	Q_lastUsageMinute = Wld_GetTimeMin();
 	Q_lastUsageDuration = duration;
