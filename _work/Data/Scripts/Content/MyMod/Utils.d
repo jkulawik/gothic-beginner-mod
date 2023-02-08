@@ -25,7 +25,9 @@ const int Q_startX = 5;
 var int Q_slotCount;  // init at 1
 
 var int Q_lastUsageDay;
+var int Q_lastUsageMinute;
 var int Q_lastUsageHour;
+var int Q_lastUsageDuration;
 
 func void Q_initPrintQueue()
 {
@@ -75,6 +77,9 @@ func void Q_PrintScreen(var string text, var int duration)
 	};
 
 	Q_lastUsageDay = Wld_GetDay();
+	Q_lastUsageHour = Wld_GetTimeHour();
+	Q_lastUsageMinute = Wld_GetTimeMin();
+	Q_lastUsageDuration = duration;
 };
 
 

@@ -1,5 +1,6 @@
 // Wld_GetTimeMin and Wld_GetTimeHour originally by orcwarrior
 
+const float GAME_MINUTE_TO_REAL_SECONDS = 4.5;
 
 func int Wld_CheckMinutes(var int a, var int B, var int mm)  //0=false, 1=true
 {
@@ -219,3 +220,22 @@ func int Wld_GetTimeHour()
       if Wld_IsTime(hh,0,hh,59)
       {return hh;};
 };
+
+
+
+func int Wld_CalcIntervalMinutes(var int h1, var int m1, var int h2, var int m2)
+{
+	var int h_diff;
+	var int m_diff;
+	h_diff = Math_Abs(h2-h1);  //Using absolute value handles the situation when h1 <= 23 and h2 > 0
+	m_diff = Math_Abs(m2-m1);
+	return h_diff*60 + m_diff;
+	// Explanation:
+	// let's say h_diff = 1
+	// 14:50 vs 15:02 is (60-50=10 minutes) + 2m
+	// 15:02 vs 16:50 is (60-2=58 minutes) + 50 minutes
+	// so (60 - m1) + m2, but that = 60 + m2-m1 = 60 + m_diff = h_diff*60 + m_diff
+	// the same is true with h_diff > 1, but now we add extra 60 min per each hour, which is also h_diff*60 + m_diff
+	// if h_diff is 0, then we can just use m_diff; but that is the same as h_diff*60 + m_diff because h_diff=0
+};
+
