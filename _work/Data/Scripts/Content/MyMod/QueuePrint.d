@@ -64,10 +64,28 @@ func void Q_PrintScreen(var string text, var int duration)
 	}
 	else if(Q_slotCount == 6){
 		ps(text, Q_startX, Q_startY-6*Q_spaceY, duration);
-	};
+	}
+	else if(Q_slotCount == 7){
+		ps(text, Q_startX, Q_startY-7*Q_spaceY, duration);
+	}
+	else if(Q_slotCount == 8){
+		ps(text, Q_startX, Q_startY-8*Q_spaceY, duration);
+	}
+	else if(Q_slotCount == 9){
+		ps(text, Q_startX, Q_startY-9*Q_spaceY, duration);
+	}
+	else if(Q_slotCount == 10){
+		ps(text, Q_startX, Q_startY-9*Q_spaceY, duration);
+	}
+	else if(Q_slotCount == 11){
+		ps(text, Q_startX, Q_startY-9*Q_spaceY, duration);
+	}
+	else if(Q_slotCount == 12){
+		ps(text, Q_startX, Q_startY-9*Q_spaceY, duration);
+	};	
 	
 	// Update counter
-	if(Q_slotCount == 6){
+	if(Q_slotCount == 12){
 		Q_slotCount = 1;
 	}
 	else{
