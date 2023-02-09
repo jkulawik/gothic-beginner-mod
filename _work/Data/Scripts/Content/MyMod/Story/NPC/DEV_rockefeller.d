@@ -113,7 +113,9 @@ INSTANCE DEV_Rockefeller(NPC_DEFAULT)
 	EquipItem (self, ItMw_Mod_2H_FakeSword);
 
 
-//	CreateInvItem(self,ItMw_Mod_2H_FakeSword);
+	CreateInvItem(self,ItMi_CraftRuneRed);
+	CreateInvItem(self,ItMi_CraftRuneBlue);
+	CreateInvItem(self,ItMi_CraftRuneYellow);
 	
 //	CreateInvItem(self,ITAR_Mod_FakeRaven);
 
