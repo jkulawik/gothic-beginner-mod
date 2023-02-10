@@ -118,14 +118,24 @@ INSTANCE DEV_Rockefeller(NPC_DEFAULT)
 	
 	//-------- inventory --------
 	
-	EquipItem (self, ItMw_Mod_2H_FakeSword);
-
-
-	CreateInvItem(self,ItMi_CraftRuneRed);
-	CreateInvItem(self,ItMi_CraftRuneBlue);
-	CreateInvItem(self,ItMi_CraftRuneYellow);
+	// Weapons
+	EquipItem (self, ItMw_Mod_2H_FakeUriziel);
 	
-//	CreateInvItem(self,ITAR_Mod_FakeRaven);
+	// Armors
+//	CreateInvItem(self, ITAR_Mod_FakeRaven);
+	CreateInvItem(self, ITAR_REB_1);
+	CreateInvItem(self, ITAR_REB_2);
+	CreateInvItem(self, ITAR_REB_3);
+	CreateInvItem(self, ITAR_REB_4);
+	
+	CreateInvItem(self, ITAR_Mod_BDT_1);
+	CreateInvItem(self, ITAR_Mod_BDT_2);
+
+	// Misc
+	CreateInvItem(self, ItMi_CraftRuneRed);
+	CreateInvItem(self, ItMi_CraftRuneBlue);
+	CreateInvItem(self, ItMi_CraftRuneYellow);
+
 
 };
 

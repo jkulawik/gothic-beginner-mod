@@ -1,4 +1,4 @@
-INSTANCE ItMw_Mod_2H_FakeSword (C_Item) 
+INSTANCE ItMw_Mod_2H_FakeUriziel (C_Item) 
 {
 	name 				=	"Œwiec¹cy z³oty miecz";
 
