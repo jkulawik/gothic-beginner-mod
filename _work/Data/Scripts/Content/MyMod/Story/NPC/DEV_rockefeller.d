@@ -38,6 +38,12 @@ INSTANCE DEV_Rockefeller(NPC_DEFAULT)
 	Npc_SetTalentSkill	(self, NPC_TALENT_ALCHEMY, 			1);
 	Npc_SetTalentSkill	(self, NPC_TALENT_TAKEANIMALTROPHY,		1);
 	
+	Npc_SetTalentSkill 	(self, NPC_TALENT_FOREIGNLANGUAGE,		1);
+	
+	Npc_SetTalentSkill 	(self, NPC_TALENT_C,		7);
+	Npc_SetTalentSkill 	(self, NPC_TALENT_D,		1);
+	
+	
 	PLAYER_TALENT_ALCHEMY[POTION_Health_01]		= TRUE; 
 	PLAYER_TALENT_ALCHEMY[POTION_Health_02]		= TRUE; 
 	PLAYER_TALENT_ALCHEMY[POTION_Health_03]		= TRUE; 
@@ -105,6 +111,8 @@ INSTANCE DEV_Rockefeller(NPC_DEFAULT)
 	PLAYER_TALENT_RUNES[SPL_Shrink] 				= TRUE;
 	
 	B_SetFightSkills (self, 100); //Grenzen für Talent-Level liegen bei 30 und 60
+
+
 	
 	//bodyStateInterruptableOverride = TRUE;
 	

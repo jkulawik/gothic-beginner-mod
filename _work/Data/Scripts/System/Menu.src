@@ -5,7 +5,7 @@ menu\menu_defines.d
 _intern\menu.d
 
 // Menue (Spielmenue)
-mymod\menu\menu_main.d
+mymod\menu_main.d
 menu\menu_opt.d
 menu\menu_opt_game.d
 menu\menu_opt_graphics.d
@@ -20,4 +20,4 @@ menu\menu_savegame.d
 menu\menu_log.d
 
 // Status-Screen
-menu\menu_status.d
+mymod\menu_status.d

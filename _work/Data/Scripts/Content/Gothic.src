@@ -18,7 +18,7 @@ STORY\XP_Constants.d
 STORY\Story_Globals.d
 STORY\NPC_Globals.d
 STORY\svm.d
-STORY\Text.d
+MyMod\Overwrites\Text.d
 
 
 STORY\B_Story\C_NpcIsInQuarter.d
