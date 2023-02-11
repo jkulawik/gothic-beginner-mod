@@ -1,10 +1,10 @@
 *.*
 _work/tools/help/classes
-wine_prefix
 
 !.gitignore
 !readme.md
 
+!Data/ModVDF/DummyVDF.mod
 !system/aTestMod.ini
 !system/picardia2.ico
 !system/aa_reparse.sh
