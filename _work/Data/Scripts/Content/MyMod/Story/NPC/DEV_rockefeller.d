@@ -135,6 +135,8 @@ INSTANCE DEV_Rockefeller(NPC_DEFAULT)
 	CreateInvItem(self, ItMi_CraftRuneRed);
 	CreateInvItem(self, ItMi_CraftRuneBlue);
 	CreateInvItem(self, ItMi_CraftRuneYellow);
+	
+	CreateInvItem(self, ItMi_texgen);  //debug
 
 
 };
