@@ -19,3 +19,18 @@ _work/tools/help/classes
 
 !_work/Data/Scripts/System/Menu.src
 !_work/Data/Scripts/System/MyMod/**
+
+
+
+
+# unruly textures which don't recompile on their own
+
+!_work/Data/Textures/_compiled/Hum_Body_Naked_V13_C0-C.TEX
+!_work/Data/Textures/_compiled/Hum_Body_Naked_V14_C0-C.TEX
+!_work/Data/Textures/_compiled/Hum_Body_Naked_V15_C0-C.TEX
+!_work/Data/Textures/_compiled/Hum_Body_Naked_V16_C0-C.TEX
+!_work/Data/Textures/_compiled/Hum_Body_Naked_V17_C0-C.TEX
+!_work/Data/Textures/_compiled/Hum_Body_Naked_V18_C0-C.TEX
+!_work/Data/Textures/_compiled/Hum_Body_Naked_V19_C0-C.TEX
+!_work/Data/Textures/_compiled/Hum_Body_Naked_V20_C0-C.TEX
+!_work/Data/Textures/_compiled/Hum_Head_V163_C0-C.TEX
