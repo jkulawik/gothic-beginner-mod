@@ -1,0 +1,75 @@
+ZenGin Archive
+ver 1
+zCArchiverGeneric
+ASCII
+saveGame 0
+date 11.2.2023 13:6:52
+user jacob
+END
+objects 6        
+END
+
+[% oCWorld:zCWorld 64513 0]
+	[VobTree % 0 0]
+		childs0=int:1
+		[% zCVobLevelCompo:zCVob 52224 1]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:-3700 -13091.8232 -59900 108999.984 20014.0352 67399.9922 
+			trafoOSToWSRot=raw:0000803f0000000000000000000000000000803f0000000000000000000000000000803f
+			trafoOSToWSPos=vec3:0 0 0
+			vobName=string:LEVEL-VOB
+			visual=string:G1_SURFACE_EDITED.3DS
+			showVisual=bool:0
+			visualCamAlign=enum:0
+			visualAniMode=enum:0
+			visualAniModeStrength=float:0
+			vobFarClipZScale=float:1
+			cdStatic=bool:0
+			cdDyn=bool:0
+			staticVob=bool:0
+			dynShadow=enum:0
+			zbias=int:0
+			isAmbient=bool:0
+			[visual zCMesh 53505 2]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs1=int:1
+		[% zCVob 52224 3]
+			pack=int:0
+			presetName=string:
+			bbox3DWS=rawFloat:3476.34961 -527.725098 -9569.45117 4407.00879 -86.4720459 -8602.06543 
+			trafoOSToWSRot=raw:57d3a23d000000008c307f3f000000000000803f000000008c307fbf0000000057d3a23d
+			trafoOSToWSPos=vec3:3784.30029 -447.618347 -8997.12402
+			vobName=string:LONE_HUT
+			visual=string:OW_LONEHUT.3DS
+			showVisual=bool:1
+			visualCamAlign=enum:0
+			visualAniMode=enum:0
+			visualAniModeStrength=float:0
+			vobFarClipZScale=float:1
+			cdStatic=bool:0
+			cdDyn=bool:1
+			staticVob=bool:0
+			dynShadow=enum:0
+			zbias=int:0
+			isAmbient=bool:0
+			[visual zCProgMeshProto 53505 4]
+			[]
+			[ai % 0 0]
+			[]
+		[]
+		childs2=int:0
+	[]
+	[WayNet % 0 0]
+		[% zCWayNet 0 5]
+			waynetVersion=int:1
+			numWaypoints=int:0
+			numWays=int:0
+		[]
+	[]
+	[EndMarker % 0 0]
+	[]
+[]
