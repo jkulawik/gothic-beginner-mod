@@ -17,6 +17,7 @@ func void INIT_GLOBAL()
 func void STARTUP_TOTENINSEL()
 {
 	Wld_InsertNpc(DEV_2130_Szmyk, "SZMYK_STAND_01");
+	Wld_InsertNpc(PC_Garrett, "WP_TEST_0");
 };
 
 
