@@ -17,7 +17,14 @@ func void INIT_GLOBAL()
 func void STARTUP_TOTENINSEL()
 {
 	Wld_InsertNpc(DEV_2130_Szmyk, "SZMYK_STAND_01");
-	Wld_InsertNpc(PC_Garrett, "WP_TEST_0");
+	Wld_InsertNpc(PC_Hero, "WP_TEST_0");
+	
+	//HUMANS-S_WOUNDED
+	//HUMANS-S_WOUNDEDB
+	//HUMANS-T_WOUNDED_2_STAND
+	//HUMANS-T_WOUNDEDB_2_STAND
+	// bs: BS_UNCONSCIOUS
+	// AI_PlayAniBS ( VAR C_NPC npc, VAR STRING aniname, VAR INT bodystate );
 };
 
 

@@ -1,4 +1,4 @@
-instance PC_Garrett (NPC_DEFAULT)
+instance PC_Hero (NPC_DEFAULT)
 {
 	// ------ SC ------
 	name 		= "Garrett";
@@ -28,8 +28,8 @@ instance PC_Garrett (NPC_DEFAULT)
 	// ------ visuals ------
 	Mdl_SetVisual (self,"HUMANS.MDS");
 	// ------ Visual ------ "body_Mesh",		bodyTex	SkinColor	headMesh,		faceTex,	teethTex,	armorInstance	
-	Mdl_SetVisualBody (self, "hum_body_Naked0", 	14,		0,	"Hum_Head_Pony", 	163,		0, 		NO_ARMOR);
-	
+	Mdl_SetVisualBody (self, "hum_body_Naked0", 	14,		0,	"Hum_Head_Pony", 	66,		0, 		NO_ARMOR);
+	// face candidates: 66
 
 	// ------ Fighting skill ------
 	B_SetFightSkills 	(self, 10); 

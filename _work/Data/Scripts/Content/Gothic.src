@@ -233,6 +233,7 @@ STORY\Npc_Scripts\B_SetAttributesToChapter.d
 STORY\Npc_Scripts\B_SetNpcVisual.d
 STORY\Npc_Scripts\Npc_Default.d
 
+MyMod\Overwrites\PC_Garrett.d
 STORY\NPC\*.d
 STORY\NPC\Monster\*.d
 STORY\NPC\Orc\*.d
