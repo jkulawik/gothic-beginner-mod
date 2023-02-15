@@ -120,6 +120,8 @@ INSTANCE DEV_Rockefeller(NPC_DEFAULT)
 	
 	// Weapons
 	EquipItem (self, ItMw_Mod_2H_FakeUriziel);
+	CreateInvItem(self, ItMw_1h_Runic_clean);
+	CreateInvItem(self, ItMw_2h_Runic_clean);
 	
 	// Armors
 //	CreateInvItem(self, ITAR_Mod_FakeRaven);

@@ -29,6 +29,62 @@ INSTANCE ItMw_Mod_2H_FakeUriziel (C_Item)
 };
 
 
+INSTANCE ItMw_1h_Runic_clean (C_Item) 
+{	
+	name 				=	"Jednorêczny miecz runiczny";
+
+	mainflag 			=	ITEM_KAT_NF;
+	flags 				=	ITEM_SWD;	
+	material 			=	MAT_METAL;
+
+	value 				=	Value_Common1;
+
+	damageTotal			= 	Damage_Common1;
+	damagetype			=	DAM_EDGE;
+	range    			=  	85;	
+
+	on_equip			=	Equip_1H_05;
+	on_unequip			=	UnEquip_1H_05;
+
+	cond_atr[2]   		= 	ATR_STRENGTH;
+	cond_value[2]  		= 	Condition_Common1;
+	visual 				=	"ItMw_2h_Runic_clean.3DS";
+
+	description			= name;
+	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
+	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
+	TEXT[4]				= NAME_ADDON_BONUS_1H;			COUNT[4]	= Waffenbonus_05;
+	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
+};
+
+INSTANCE ItMw_2h_Runic_clean (C_Item) 
+{	
+	name 				=	"Dwurêczny miecz runiczny";
+
+	mainflag 			=	ITEM_KAT_NF;
+	flags 				=	ITEM_2HD_SWD;	
+	material 			=	MAT_METAL;
+
+	value 				=	Value_Common1;
+
+	damageTotal			= 	Damage_Common1;
+	damagetype			=	DAM_EDGE;
+	range    			=  	Range_ElBastardo;	
+
+	on_equip			=	Equip_1H_05;
+	on_unequip			=	UnEquip_1H_05;
+
+	cond_atr[2]   		= 	ATR_STRENGTH;
+	cond_value[2]  		= 	Condition_Common1;
+	visual 				=	"ItMw_2h_Runic_red.3DS";
+
+	description			= name;
+	TEXT[2]				= NAME_Damage;					COUNT[2]	= damageTotal;
+	TEXT[3] 			= NAME_Str_needed;				COUNT[3]	= cond_value[2];
+	TEXT[4]				= NAME_ADDON_BONUS_1H;			COUNT[4]	= Waffenbonus_05;
+	TEXT[5]				= NAME_Value;					COUNT[5]	= value;
+};
+
 
 /*
 INSTANCE itmw_Uriziel  (C_Item) 
