@@ -16,8 +16,8 @@ INSTANCE ITAR_Mod_FakeRaven (C_Item)
 	wear 					=	WEAR_TORSO;
 
 	visual 					=	"itar_golden_raven.3ds";
-	visual_change 				=	"Armor_Raven_Mod.asc";
-	visual_skin 				=	0;
+	visual_change 			=	"Armor_Raven_Mod.asc";  // Armor_Raven_Mod  Armor_Raven_Addon
+	visual_skin 			=	0;
 	material 				=	MAT_METAL;
 
 	description				=	name;

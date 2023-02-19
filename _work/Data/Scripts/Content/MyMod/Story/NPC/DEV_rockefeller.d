@@ -125,6 +125,8 @@ INSTANCE DEV_Rockefeller(NPC_DEFAULT)
 	
 	// Armors
 //	CreateInvItem(self, ITAR_Mod_FakeRaven);
+	CreateInvItem(self, ITAR_PAL_H);
+	
 	CreateInvItem(self, ITAR_REB_1);
 	CreateInvItem(self, ITAR_REB_2);
 	CreateInvItem(self, ITAR_REB_3);
